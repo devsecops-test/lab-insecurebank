@@ -18,5 +18,5 @@ analyze:
       jars: "disable"
 install:
   coverity:
-    version: default 
+    version: 2024.3.0 
 serverUrl: ${{ secrets.POLARIS_URL }}
