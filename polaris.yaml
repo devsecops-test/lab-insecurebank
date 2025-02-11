@@ -11,12 +11,16 @@ capture:
       files:
       - directory: ${project.projectDir}
       - excludeRegex: .*.war|.*.jar
+      echo "ABC1"
 analyze:
   mode: central
+  echo "ABC2"
   coverity:
     caching:
       jars: "disable"
 install:
   coverity:
     version: 2024.3.0 
+    echo "ABC3"
 serverUrl: ${{ secrets.POLARIS_URL }}
+echo ${serverUrl}
