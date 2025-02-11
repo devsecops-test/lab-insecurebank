@@ -1,7 +1,6 @@
 version: "1"
 project:
   name: insecure-bank
-  echo "${name}"
   branch: ${scm.git.branch}
   echo "${branch}"
   revision:
